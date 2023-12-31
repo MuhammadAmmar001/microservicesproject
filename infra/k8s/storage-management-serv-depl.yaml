@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: storage-management-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: storage-management
+  template:
+    metadata:
+      labels:
+        app: storage-management
+    spec:
+      containers:
+        - name: storage-management
+          image: areeb21/storage-management
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: storage-management-srv
+spec:
+  selector:
+    app: storage-management
+  ports:
+    - name: storage-management
+      protocol: TCP
+      port: 3001
+      targetPort: 3001

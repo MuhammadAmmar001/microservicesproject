@@ -1,0 +1,277 @@
+body {
+  background-image: linear-gradient(to right, #41295a, #2F0743);
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.name {
+  margin: 0;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #280539;
+  padding: 10px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #41295a;
+}
+
+.login {
+  background-color: #2F0743;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  margin-top: 100px;
+}
+
+.login label,
+.login input,
+.login button {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.login input {
+  padding: 8px;
+  width: 100%;
+}
+
+.login button {
+  background-color: #4d3568;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.login button:hover {
+  background-color: #280539;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 300px;
+  margin: 5px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(20, 20, 20, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-container .p-h {
+  display: inline;
+}
+
+.gallery-container .sub-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-container .delete-all-button {
+  background-color: #ff5757;
+  /* Red color for delete button */
+  color: #fff;
+  /* White text color */
+  padding: 10px 15px;
+  margin-top: 20px;
+  /* Adjust padding as needed */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  /* Adjust margin as needed */
+  transition: background-color 0.3s ease;
+  /* Smooth transition effect */
+
+  /* Optional: Add hover effect */
+  &:hover {
+    background-color: #e04545;
+    /* Darker red on hover */
+  }
+}
+
+.logs {
+  margin: 20px;
+}
+
+.logs div {
+  background-color: #282c34;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.logs h3 {
+  color: #61dafb;
+}
+
+.upload-container {
+  background-color: #282c34;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.upload-heading {
+  color: #61dafb;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.upload-input {
+  display: none;
+}
+
+.upload-label {
+  background-color: #61dafb;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+  background-color: #45a8eb;
+}
+
+.upload-button {
+  background-color: #61dafb;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.upload-button:hover {
+  background-color: #45a8eb;
+}
+
+.gallery-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.image-wrapper {
+  position: relative;
+  max-width: 100%;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.delete-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff5757;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Upload Component styles */
+.my-component .upload-success-message {
+  color: #61dafb;
+  margin-top: 10px;
+}
+
+.my-component .file-selected-indicator {
+  color: #61dafb;
+  margin-top: 10px;
+}
+
+.my-component {
+  margin: 20px;
+}
+
+.my-component>div {
+  background-color: #282c34;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.my-component h2 {
+  color: #61dafb;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.my-component label {
+  background-color: #61dafb;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.my-component label:hover {
+  background-color: #45a8eb;
+}
+
+.my-component button {
+  background-color: #61dafb;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.my-component button:hover {
+  background-color: #45a8eb;
+}

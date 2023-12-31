@@ -1,0 +1,8 @@
+# .gitignore
+
+# Ignore the example_folder
+example_folder/
+
+# Ignore all folders named node_modules
+node_modules/
+auth_serv/node_modules/

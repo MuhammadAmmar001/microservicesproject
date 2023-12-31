@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth-serv-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: auth-serv
+  template:
+    metadata:
+      labels:
+        app: auth-serv
+    spec:
+      containers:
+        - name: logging
+          image: areeb21/auth-serv
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: auth-serv-srv
+spec:
+  selector:
+    app: auth-serv
+  ports:
+    - name: auth-serv
+      protocol: TCP
+      port: 3002
+      targetPort: 3002
