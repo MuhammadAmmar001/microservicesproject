@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function Upload() {
   const [file, setFile] = useState(null);
@@ -88,7 +90,7 @@ function Upload() {
         if (data.userId) {
           setUserId(data.userId);
           setBandwidthQuota(
-            Math.round((25 - data.user.bandwidthQuota) * 100) / 100
+            Math.round((25 + data.user.bandwidthQuota) * 100) / 100
           );
           setStorageQuota(
             Math.round((10 - data.user.storageQuota) * 100) / 100
@@ -105,7 +107,7 @@ function Upload() {
 
   return (
     <div className="my-component">
-      <div>
+      <div className="text-center">
         <div className="upload-success-message">{message}</div>
         <div>Bandwidth remaining: {bandwidthQuota} MBs</div>
         <div>Storage Quota remaining: {storageQuota} MBs</div>

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function MyPhotos() {
   const [imageUrls, setImageUrls] = useState([]);
@@ -127,9 +129,9 @@ function MyPhotos() {
   return (
     <div className="gallery-container">
       <div className="sub-head">
-        <h2 className="p-h">Your Photos</h2>
+        <h2 className="mt-2">Your Photos</h2>
         <div>
-          <button className="delete-all-button" onClick={handleDeleteAll}>
+          <button className="btn btn-danger mt-2" onClick={handleDeleteAll}>
             Delete All Photos
           </button>
         </div>

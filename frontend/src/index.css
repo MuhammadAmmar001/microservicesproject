@@ -221,35 +221,38 @@ body {
 
 /* Upload Component styles */
 .my-component .upload-success-message {
-  color: #61dafb;
+  color: #ffffff;
   margin-top: 10px;
 }
 
 .my-component .file-selected-indicator {
-  color: #61dafb;
+  color: #eceff0;
   margin-top: 10px;
 }
 
 .my-component {
-  margin: 20px;
+  /* margin: 20px; */
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .my-component>div {
-  background-color: #282c34;
-  padding: 20px;
+  background-color: #3e1e60;
+  padding: 40px;
   margin: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .my-component h2 {
-  color: #61dafb;
+  color: #ffffff;
   font-size: 24px;
   margin-bottom: 20px;
 }
 
 .my-component label {
-  background-color: #61dafb;
+  background-color: #775898;
   color: #ffffff;
   padding: 10px;
   border-radius: 4px;
@@ -258,11 +261,11 @@ body {
 }
 
 .my-component label:hover {
-  background-color: #45a8eb;
+  background-color: #2F0743;
 }
 
 .my-component button {
-  background-color: #61dafb;
+  background-color: #775898;
   color: #ffffff;
   padding: 10px;
   border: none;
@@ -273,5 +276,5 @@ body {
 }
 
 .my-component button:hover {
-  background-color: #45a8eb;
+  background-color: #2F0743;
 }
